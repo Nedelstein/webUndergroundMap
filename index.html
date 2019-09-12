@@ -11,24 +11,25 @@
     <img
       id="image"
       style="width:100%; height:100%;"
-      src="assets/subwaymap_busy.png"
+      src="https://raw.githubusercontent.com/Nedelstein/webUndergroundMap/master/assets/subwaymap_busy.png"
     />
 
     <script>
-      var busyImg = "assets/subwaymap_busy.png";
-      var timelineImg = "assets/subwaymap_timeline-min.gif";
-
+      var busyImg =
+        "https://raw.githubusercontent.com/Nedelstein/webUndergroundMap/master/assets/subwaymap_busy.png";
+      var timelineImg =
+        "https://media.giphy.com/media/ftef5JAleMsjzoZm51/giphy.gif";
       var img = document.getElementById("image");
       var currentPos = 0;
 
       var images = [busyImg, timelineImg];
+
       function switchImg() {
         if (++currentPos >= images.length) {
           currentPos = 0;
         }
         img.src = images[currentPos];
       }
-
       setInterval(switchImg, 10000);
     </script>
   </body>
