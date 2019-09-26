@@ -4,7 +4,8 @@
   "description": "",
   "main": "transition.js",
   "scripts": {
-    "build": "webpack --config ./config/webpack.config.js"
+    "build": "webpack --config ./config/webpack.config.js",
+    "start": "serve public/"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,9 @@
     "serve": "^11.1.0",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9"
+  },
+  "devDependencies": {
+    "file-loader": "^4.2.0",
+    "image-webpack-loader": "^6.0.0"
   }
 }
