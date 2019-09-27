@@ -12,9 +12,43 @@ img {
   max-width: 100%;
   position: absolute;
 }
-video {
-  max-width: 100%;
+
+.cls-Brown {
+  fill: none;
+  stroke: #b0720d;
+  stroke-width: 3px;
 }
+
+.cls-Green {
+  fill: none;
+  stroke: #009d57;
+  stroke-width: 3px;
+}
+
+.cls-Purple {
+  fill: none;
+  stroke: #9d3d96;
+  stroke-width: 3px;
+}
+
+.cls-Red {
+  fill: none;
+  stroke-width: 3px;
+  stroke: #ef3e42;
+}
+
+.cls-Yellow {
+  fill: none;
+  stroke-width: 3px;
+  stroke: #ffd420;
+}
+
+.cls-Orange {
+  fill:none;
+  stroke-width: 3px;
+  stroke: #f58220;
+}
+
 #Phase1 {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
