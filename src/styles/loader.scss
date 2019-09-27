@@ -123,6 +123,15 @@ img {
   position: absolute;
 }
 
+#Phase10 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 10s;
+  animation-fill-mode: forwards;
+  animation-delay: 4.8s;
+  position: absolute;
+}
+
 @keyframes dash {
   /* from {
       stroke-dashoffset: 1000;
