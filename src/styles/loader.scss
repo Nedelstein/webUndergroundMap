@@ -141,6 +141,24 @@ img {
   position: absolute;
 }
 
+#Phase12 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 10s;
+  animation-fill-mode: forwards;
+  animation-delay: 5.4s;
+  position: absolute;
+}
+
+#Phase13 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 10s;
+  animation-fill-mode: forwards;
+  animation-delay: 5.7s;
+  position: absolute;
+}
+
 @keyframes dash {
   /* from {
       stroke-dashoffset: 1000;
