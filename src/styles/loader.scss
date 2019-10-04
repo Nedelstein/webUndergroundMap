@@ -52,11 +52,16 @@ img {
 .cls-Grey {
   fill: none;
   stroke-width: 5px;
-  stroke: #939598;
+  stroke: #a4a4a4;
 }
 
+.cls-Blue {
+  fill: none;
+  stroke-width: 5px;
+  stroke: #34c3cf;
+}
 
-#Phase1, #Phase2, #Phase3, #Phase4, #Phase5, #Phase6, #Phase7, #Phase8, #Phase9, #Phase10, #Phase11, #Phase12, #Phase13, #Phase14, #Phase15, #Phase16, #Phase17{
+#Phase1, #Phase2, #Phase3, #Phase4, #Phase5, #Phase6, #Phase7, #Phase8, #Phase9, #Phase10, #Phase11, #Phase12, #Phase13, #Phase14, #Phase15, #Phase16, #Phase17, #Phase18{
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 10s linear;
@@ -114,6 +119,9 @@ img {
 }
 #Phase17 {
   animation-delay: 6.9s;
+}
+#Phase18 {
+  animation-delay: 7.3s;
 }
 
 
