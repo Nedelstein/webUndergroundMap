@@ -49,7 +49,14 @@ img {
   stroke: #FAAF23;
 }
 
-#Phase1, #Phase2, #Phase3, #Phase4, #Phase5, #Phase6, #Phase7, #Phase8, #Phase9, #Phase10, #Phase11, #Phase12, #Phase13, #Phase14, #Phase15, #Phase16{
+.cls-Grey {
+  fill: none;
+  stroke-width: 5px;
+  stroke: #939598;
+}
+
+
+#Phase1, #Phase2, #Phase3, #Phase4, #Phase5, #Phase6, #Phase7, #Phase8, #Phase9, #Phase10, #Phase11, #Phase12, #Phase13, #Phase14, #Phase15, #Phase16, #Phase17{
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 10s linear;
@@ -105,6 +112,10 @@ img {
 #Phase16 {
   animation-delay: 6.6s;
 }
+#Phase17 {
+  animation-delay: 6.9s;
+}
+
 
 @keyframes dash {
   /* from {
