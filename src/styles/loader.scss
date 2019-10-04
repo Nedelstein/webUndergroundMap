@@ -25,6 +25,12 @@ img {
   stroke-width: 5px;
 }
 
+.cls-GreenG {
+  fill: none;
+  stroke: #5dd9a5;
+  stroke-width: 5px;
+}
+
 .cls-Purple {
   fill: none;
   stroke: #B76BA3;
@@ -61,7 +67,7 @@ img {
   stroke: #34c3cf;
 }
 
-#Phase1, #Phase2, #Phase3, #Phase4, #Phase5, #Phase6, #Phase7, #Phase8, #Phase9, #Phase10, #Phase11, #Phase12, #Phase13, #Phase14, #Phase15, #Phase16, #Phase17, #Phase18{
+#Phase1, #Phase2, #Phase3, #Phase4, #Phase5, #Phase6, #Phase7, #Phase8, #Phase9, #Phase10, #Phase11, #Phase12, #Phase13, #Phase14, #Phase15, #Phase16, #Phase19, #Phase20, #Phase21, #Phase22, #Phase23, #Phase24{
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 10s linear;
@@ -118,12 +124,41 @@ img {
   animation-delay: 6.6s;
 }
 #Phase17 {
+  
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 7.5s linear;
+  animation-fill-mode: forwards;
+  position: absolute;
   animation-delay: 6.9s;
 }
 #Phase18 {
+  
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 7.5s linear;
+  animation-fill-mode: forwards;
+  position: absolute;
   animation-delay: 7.3s;
 }
-
+#Phase19 {
+  animation-delay: 7.7s;
+}
+#Phase20 {
+  animation-delay: 8.0s;
+}
+#Phase21 {
+  animation-delay: 8.4s;
+}
+#Phase22 {
+  animation-delay: 8.8s;
+}
+#Phase23 {
+  animation-delay: 9.3s;
+}
+#Phase24 {
+  animation-delay: 9.6s;
+}
 
 @keyframes dash {
   /* from {
