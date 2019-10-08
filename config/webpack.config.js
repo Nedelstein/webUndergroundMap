@@ -20,10 +20,11 @@ module.exports = {
         test: /\.(sa|sc|c)ss$/,
         use: [
           {
-            loader: MiniCssExtractPlugin.loader
+            loader: MiniCssExtractPlugin.loader,
           },
           { loader: 'css-loader' },
-          { loader: 'sass-loader' }
+          { loader: 'sass-loader' },
+          'sass-loader',
         ]
       },
       {
@@ -43,35 +44,16 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin(),
-    new HTMLInlineCSSWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      inlineSource: '.(js|css)$'
-    }),
-    new HtmlWebpackInlineSourcePlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css'
     }),
+    new HtmlWebpackPlugin()
+    // new HTMLInlineCSSWebpackPlugin(),
+    // new HtmlWebpackPlugin({
+    //   inlineSource: '.(js|css)$'
+    // }),
+    // new HtmlWebpackInlineSourcePlugin(),
 
   ]
-  // [
-  // new MiniCssExtractPlugin({
-  //   filename: '[name].css',
-  //   chunkFilename: '[id].css'
-  // }),
-  // new HtmlWebpackPlugin(),
-  // new HTMLInlineCSSWebpackPlugin(),
-  // ],
-  // module: {
-  //   rules: [
-  //     {
-  //       test: /\.css$/,
-  //       use: [
-  //         MiniCssExtractPlugin.loader,
-  //         "css-loader"
-  //       ]
-  //     }
-  //   ]
-  // }
 };

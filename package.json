@@ -5,7 +5,7 @@
   "main": "transition.js",
   "scripts": {
     "build": "webpack --config ./config/webpack.config.js",
-    "start": "serve public/"
+    "start": "serve public/assets"
   },
   "repository": {
     "type": "git",
