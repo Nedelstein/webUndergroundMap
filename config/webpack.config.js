@@ -1,6 +1,10 @@
 const path = require("path");
 const webpack = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HTMLInlineCSSWebpackPlugin = require("html-inline-css-webpack-plugin").default;
+const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin');
+
 
 module.exports = {
   entry: {
@@ -39,9 +43,35 @@ module.exports = {
     ]
   },
   plugins: [
+    new HtmlWebpackPlugin(),
+    new HTMLInlineCSSWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      inlineSource: '.(js|css)$'
+    }),
+    new HtmlWebpackInlineSourcePlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css'
     }),
+
   ]
+  // [
+  // new MiniCssExtractPlugin({
+  //   filename: '[name].css',
+  //   chunkFilename: '[id].css'
+  // }),
+  // new HtmlWebpackPlugin(),
+  // new HTMLInlineCSSWebpackPlugin(),
+  // ],
+  // module: {
+  //   rules: [
+  //     {
+  //       test: /\.css$/,
+  //       use: [
+  //         MiniCssExtractPlugin.loader,
+  //         "css-loader"
+  //       ]
+  //     }
+  //   ]
+  // }
 };
