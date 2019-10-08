@@ -48,12 +48,12 @@ module.exports = {
       filename: '[name].css',
       chunkFilename: '[id].css'
     }),
-    new HtmlWebpackPlugin()
-    // new HTMLInlineCSSWebpackPlugin(),
-    // new HtmlWebpackPlugin({
-    //   inlineSource: '.(js|css)$'
-    // }),
-    // new HtmlWebpackInlineSourcePlugin(),
+    new HtmlWebpackPlugin(),
+    new HTMLInlineCSSWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      inlineSource: '.(css|js)$'
+    }),
+    new HtmlWebpackInlineSourcePlugin(),
 
   ]
 };
