@@ -51,7 +51,9 @@ module.exports = {
     new HtmlWebpackPlugin(),
     new HTMLInlineCSSWebpackPlugin(),
     new HtmlWebpackPlugin({
-      inlineSource: '.(css|js)$'
+      inlineSource: '.(css|js)$',
+      inject: true,
+      template: path.resolve(__dirname, '../public/index.html')
     }),
     new HtmlWebpackInlineSourcePlugin(),
 
