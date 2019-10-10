@@ -75,6 +75,9 @@ img {
   animation-fill-mode: forwards;
   position: absolute;
   z-index: 1;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
 }
 
 #Phase1 {
@@ -134,6 +137,9 @@ img {
   position: absolute;
   animation-delay: 7.5s;
   z-index: 1;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
 }
 #Phase18 {
   
@@ -144,6 +150,9 @@ img {
   position: absolute;
   animation-delay: 7.7s;
   z-index: 1;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
 }
 #Phase19 {
   animation-delay: 80s;
