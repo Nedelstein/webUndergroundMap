@@ -4,6 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HTMLInlineCSSWebpackPlugin = require("html-inline-css-webpack-plugin").default;
 const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin');
+// const 
 
 
 module.exports = {
@@ -25,6 +26,14 @@ module.exports = {
           { loader: 'css-loader' },
           { loader: 'sass-loader' },
           'sass-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              config: {
+                path: path.join(__dirname, './postcss.config.js')
+              }
+            }
+          }
         ]
       },
       {
