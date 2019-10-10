@@ -74,6 +74,7 @@ img {
   animation: dash 7s linear;
   animation-fill-mode: forwards;
   position: absolute;
+  z-index: 1;
 }
 
 #Phase1 {
@@ -132,6 +133,7 @@ img {
   animation-fill-mode: forwards;
   position: absolute;
   animation-delay: 7.5s;
+  z-index: 1;
 }
 #Phase18 {
   
@@ -141,6 +143,7 @@ img {
   animation-fill-mode: forwards;
   position: absolute;
   animation-delay: 7.7s;
+  z-index: 1;
 }
 #Phase19 {
   animation-delay: 80s;
