@@ -1,3 +1,6 @@
+$fifteen-sec: 15s;
+$ellapsed-sec: 0s;
+
 body {
 background-image: url("https://raw.githubusercontent.com/Nedelstein/webUndergroundMap/master/assets/mapBackground.png");
   background-size: 1080px 1920px;
@@ -69,11 +72,12 @@ img {
 }
 
 #Phase1, #Phase2, #Phase3, #Phase4, #Phase5, #Phase6, #Phase7, #Phase8, #Phase9, #Phase10, #Phase11, #Phase12, #Phase13, #Phase14, #Phase15, #Phase16, #Phase19, #Phase20, #Phase21, #Phase22, #Phase23, #Phase24, #Phase25, #Phase26, #Phase27{
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
+  
   animation: dash 7s linear;
   animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation-fill-mode: forwards;
   position: absolute;
   z-index: 1;
   transform: translateZ(0);
@@ -129,11 +133,10 @@ img {
 #Phase16 {
   animation-delay: 7.1s;
 }
-#Phase17 {
-  
+#Phase17{
+  animation: dash 7.5s linear;
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: dash 7.5s linear;
   animation-fill-mode: forwards;
   position: absolute;
   animation-delay: 7.5s;
@@ -141,13 +144,11 @@ img {
   transform: translateZ(0);
   backface-visibility: hidden;
   perspective: 1000;
-  animation-iteration-count: infinite;
 }
 #Phase18 {
-  
+  animation: dash 2.5s linear;
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: dash 2.5s linear;
   animation-fill-mode: forwards;
   position: absolute;
   animation-delay: 7.7s;
@@ -155,7 +156,6 @@ img {
   transform: translateZ(0);
   backface-visibility: hidden;
   perspective: 1000;
-  animation-iteration-count: infinite;
 }
 #Phase19 {
   animation-delay: 80s;
@@ -185,11 +185,13 @@ img {
   animation-delay: 11.3s;
 }
 
+
 @keyframes dash {
   /* from {
       stroke-dashoffset: 1000;
     } */
   to {
     stroke-dashoffset: 0;
+
   }
 }
