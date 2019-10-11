@@ -73,6 +73,7 @@ img {
   stroke-dashoffset: 1000;
   animation: dash 7s linear;
   animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
   position: absolute;
   z-index: 1;
   transform: translateZ(0);
@@ -140,6 +141,7 @@ img {
   transform: translateZ(0);
   backface-visibility: hidden;
   perspective: 1000;
+  animation-iteration-count: infinite;
 }
 #Phase18 {
   
@@ -153,6 +155,7 @@ img {
   transform: translateZ(0);
   backface-visibility: hidden;
   perspective: 1000;
+  animation-iteration-count: infinite;
 }
 #Phase19 {
   animation-delay: 80s;
